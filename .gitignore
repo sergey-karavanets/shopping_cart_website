@@ -1,2 +1,4 @@
 /.idea/
 /venv/
+/mysite/goods/migrations/
+/mysite/db.sqlite3
