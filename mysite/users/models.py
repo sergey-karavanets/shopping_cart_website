@@ -12,3 +12,6 @@ class User(models.Model):
     case_number = models.CharField(max_length=8, blank=True, verbose_name='Корпус')
     apartment_number = models.CharField(max_length=8, verbose_name='Номер квартиры')
 
+    def __str__(self):
+        return f'{self.name} | {self.phone} | {self.city}'
+
