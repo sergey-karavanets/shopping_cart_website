@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'goods.apps.GoodsConfig',
     'users.apps.UsersConfig',
+    'cart.apps.CartConfig',
     'phonenumber_field',
 ]
 
