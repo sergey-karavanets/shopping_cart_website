@@ -20,7 +20,7 @@ class Order(models.Model):
         verbose_name_plural = 'Заказы'
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
     def get_total_cost(self):
         return sum(item.get_cost() for item in self.items.all())
@@ -33,7 +33,7 @@ class OrderItem(models.Model):
     quantity = models.PositiveIntegerField(default=1)
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
     def get_cost(self):
         return self.price * self.quantity
