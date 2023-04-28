@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "goods/base.html" %}
 
-</body>
-</html>
+{% block title %}Заказ успешно создан!{% endblock %}
+
+{% block content %}
+    <h1>Спасибо за заказ! :)</h1>
+    <p>Заказ успешно оформлен. Номер вашего заказа
+        <strong>#{{ order.id }}</strong>.</p>
+{% endblock %}
