@@ -1,0 +1,15 @@
+{% extends "goods/base.html" %}
+{% block title %}
+<title>Магазин</title>
+{% endblock %}
+{% block content %}
+    <div id="main" class="product-list">
+        <h1>Магазин</h1>
+        {% for product in products %}
+            <div class="item">
+                <a href="{{ product.id }}">{{ product.name }}</a><br>
+                {{ product.price }} руб.
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
