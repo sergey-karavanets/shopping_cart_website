@@ -3,4 +3,5 @@
 /mysite/goods/migrations/
 /mysite/users/migrations/
 /mysite/cart/migrations/
+/mysite/orders/migrations/
 /mysite/db.sqlite3
