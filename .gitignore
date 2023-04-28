@@ -2,4 +2,5 @@
 /venv/
 /mysite/goods/migrations/
 /mysite/users/migrations/
+/mysite/cart/migrations/
 /mysite/db.sqlite3
